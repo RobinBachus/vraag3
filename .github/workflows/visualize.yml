@@ -15,4 +15,4 @@ jobs:
         with:
           output_file: "diagram.svg"
           artifact_name: "diagram"
-          should_commit: false
+          should_push: false
