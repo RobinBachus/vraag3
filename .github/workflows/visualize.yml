@@ -1,0 +1,14 @@
+on: push
+
+
+- name: Update diagram
+  id: make_diagram
+  uses: githubocto/repo-visualizer@0.7.1
+  with:
+    output_file: "diagram.svg"
+    artifact_name: "diagram"
+- name: Get artifact
+  uses: actions/download-artifact@v2
+  with:
+    name: "docs"
+    path: "downloads"
