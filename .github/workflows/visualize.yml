@@ -5,7 +5,7 @@ on:
 
 jobs:
   visualize:
-    runs-on: ubuntu 22.02
+    runs-on: ubuntu
     steps:
       - name: Update diagram
         id: make_diagram
